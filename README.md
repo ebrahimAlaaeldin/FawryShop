@@ -1,18 +1,64 @@
-## Getting Started
+# 🛒 FawryShop E-Commerce System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to **FawryShop**! This is a Java-based e-commerce system designed for learning, testing, and demonstrating core e-commerce features in a clean, extensible way.
 
-## Folder Structure
+## 📁 Folder Structure
 
-The workspace contains two folders by default, where:
+- `src/` — Java source code
+- `lib/` — External dependencies (if any)
+- `bin/` — Compiled `.class` files
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🚀 Features
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Define products with name, price, quantity, and weight
+- Support for expirable products (e.g., Cheese, Milk, Biscuits)
+- Support for shippable and unshippable products (e.g., TV, Gift Cards)
+- Cart management with quantity checks and expiry validation
+- Checkout process with:
+  - Subtotal, shipping, and total calculation
+  - Customer balance validation
+  - Shipment notice for shippable items
+  - Error handling for empty cart, out-of-stock, expired, or insufficient balance
+- Extensible product categories using enums and inheritance
+- Test cases for all major scenarios
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🧑‍💻 How to Run
 
-## Dependency Management
+1. **Compile:**
+   ```sh
+   javac -d bin src/*.java
+   ```
+2. **Run:**
+   ```sh
+   java -cp bin App
+   ```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🧪 Test Cases
+
+The `App.java` file includes code examples that cover:
+- ✅ Normal checkout with all product types
+- ❌ Empty cart
+- 💸 Insufficient balance
+- 📦 Out of stock
+- ⏰ Expired product
+
+## 🏗️ Extending the System
+
+- Add new product types by extending the `Product` class and implementing `Shippable` or `Expirable` as needed.
+- Add new categories to the enums (`GroceryType`, `ElectronicsCategory`, `UnshippableProductType`).
+- Add more test cases in `App.java` for custom scenarios.
+
+## 📚 Dependency Management
+
+Use the `JAVA PROJECTS` view in VS Code to manage dependencies. More details [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+---
+
+## 📬 Contact
+
+Created with ❤️ by **Ibrahim Alaaeldin**
+
+- 📧 Email: [ebrahimalaaeldin@gmail.com](mailto:ebrahimalaaeldin@gmail.com)  
+- 🧑‍💻 GitHub: [@ebrahimAlaaeldin](https://github.com/ebrahimAlaaeldin)
+
+Made with ❤️ for the Fawry Quantum Internship Challenge.
